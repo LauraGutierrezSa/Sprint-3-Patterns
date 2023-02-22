@@ -70,7 +70,7 @@ class Player {
   scoreboard.updateWinner();
   scoreboard.display();
   
-  player1.removePoints(2);
+  player1.removePoints(4);
   scoreboard.updateWinner();
   scoreboard.display();
   
