@@ -52,7 +52,7 @@ class Player {
       for (const player of this.players) {
         console.log(`${player.name}: ${player.score}`);
       }
-      console.log(`Winner: ${this.winner ? this.winner.name : "none"}`);
+      console.log(`The winner is: ${this.winner ? this.winner.name : "Nobody won this game!"}`);
     }
   }
   
@@ -73,4 +73,3 @@ class Player {
   player1.removePoints(4);
   scoreboard.updateWinner();
   scoreboard.display();
-  
