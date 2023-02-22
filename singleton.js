@@ -1,5 +1,3 @@
-/* Construeix una aplicació que creï diversos Jugadors/es. Els jugadors/es podran ser afegits a un Joc, que mostrarà un marcador amb les puntuacions i el guanyador/a. L'aplicació ha de poder afegir o treure punts a cada jugador/a perquè el marcador canviï. La classe Marcador ha d'implementar un patró Singleton com a requisit indispensable.*/
-
 class Player {
     constructor(name) {
       this.name = name;
@@ -59,13 +57,16 @@ class Player {
   }
   
   const scoreboard = Scoreboard.getInstance();
-  const player1 = new Player("Alice");
-  const player2 = new Player("Bob");
+  const player1 = new Player("Freddy Mercury");
+  const player2 = new Player("David Bowie");
+  const player3 = new Player("Billy Idol");
   scoreboard.addPlayer(player1);
   scoreboard.addPlayer(player2);
+  scoreboard.addPlayer(player3);
   
   player1.addPoints(5);
   player2.addPoints(3);
+  player3.addPoints(1);
   scoreboard.updateWinner();
   scoreboard.display();
   
