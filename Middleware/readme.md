@@ -1,7 +1,7 @@
 1- En terminal, introducir npm install.
 
 
-2- Para comprobar que funciona, introducir en temrinal node all.js
+2- Para comprobar que funciona, introducir en temrinal node app.js
 
 
 
